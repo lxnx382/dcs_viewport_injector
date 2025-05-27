@@ -1,6 +1,6 @@
 # 🎯 DCS Viewport Injector
 
-Automatically reinjects custom **viewport configurations** into specific DCS Lua files after updates — made for **FA-18C Hornet modules** and others.
+Automatically reinjects custom **viewport configurations** into specific DCS Lua files after DCS updates — made for **FA-18C Hornet modules** and others.
 
 > ✈️ Developed by **lxnx382**, electronics engineer & simulator builder.
 
