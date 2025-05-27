@@ -1,0 +1,10 @@
+[
+  {
+    "file": "C:/DCS/DCS World/Mods/aircraft/FA-18C/Cockpit/Scripts/IFEI/indicator/IFEI_init.lua",
+    "viewport": "FA_18C_IFEI"
+  },
+  {
+    "file": "C:/DCS/DCS World/Mods/aircraft/FA-18C/Cockpit/Scripts/TEWS/indicator/RWR_ALR67_init.lua",
+    "viewport": "FA_18C_RWR"
+  }
+]
