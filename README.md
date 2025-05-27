@@ -2,7 +2,7 @@
 
 Automatically reinjects custom **viewport configurations** into specific DCS Lua files after updates — made for **FA-18C Hornet modules** and others.
 
-> ✈️ Developed by **Lennart**, electronics engineer & simulator builder.
+> ✈️ Developed by **lxnx382**, electronics engineer & simulator builder.
 
 ---
 
@@ -25,7 +25,7 @@ DCS updates overwrite `*_init.lua` files, which removes custom `ViewportHandling
 | RWR (TEWS)| `Mods/aircraft/FA-18C/Cockpit/Scripts/TEWS/indicator/RWR_ALR67_init.lua` | `FA_18C_RWR` |
 
 ```lua
---ViewportHandling (automatically injected by Lennart's script)
+--ViewportHandling (automatically injected by lxnx382's script)
 dofile(LockOn_Options.common_script_path.."ViewportHandling.lua")
 update_screenspace_diplacement(1, true, 0)
 try_find_assigned_viewport("FA_18C_IFEI")
