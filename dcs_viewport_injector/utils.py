@@ -10,6 +10,7 @@ class Colors:
     WARN = "\033[93m"
     FAIL = "\033[91m"
     RESET = "\033[0m"
+    INFO = "\033[94m"
 
 # === Viewport code template ===
 VIEWPORT_CODE_TEMPLATE = '''

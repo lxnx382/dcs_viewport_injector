@@ -17,8 +17,22 @@ def patch_file(file_path, viewport_name):
     backup = backup_file(file_path)
     code_to_add = VIEWPORT_CODE_TEMPLATE.format(viewport_name=viewport_name)
 
-    with open(file_path, "a", encoding="utf-8") as f:
-        f.write("\n\n" + code_to_add + "\n")
+    with open(file_path, "r", encoding="utf-8") as f:
+        org_code = f.readlines()
+
+
+    if "rwr" in viewport_name.lower():
+        print(f"{Colors.INFO}ℹ️  RWR viewport detected. Please ensure the RWR is configured and working correctly in DCS.{Colors.RESET}")
+        for i, line in enumerate(org_code):
+            if "shaderLineDefaultThickness" in line:
+                org_code[i] = "    shaderLineDefaultThickness = 0.06\n"
+            elif "shaderLineDefaultFuzziness" in line:
+                org_code[i] = "    shaderLineDefaultFuzziness = 0.03\n"
+
+    org_code.append("\n\n" + code_to_add + "\n")
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.writelines(org_code)
 
     print(f"{Colors.OK}✅ Viewport '{viewport_name}' added to {file_path} (Backup: {backup}){Colors.RESET}")
 
